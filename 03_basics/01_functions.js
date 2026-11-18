@@ -39,7 +39,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){//...operator when is used in functions for variable arguments then it is called as rest operator otherwise it is called as spread operator for combining arrays,objects
     return num1
 }
 
@@ -50,11 +50,11 @@ const user = {
     prices: 199
 }
 
-function handleObject(anyobject){
+function handleObject(anyobject){//when passing an object we wont specify the name of the object being passed instead we will give generic name i.e "anyobject"
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
-// handleObject(user)
+// handleObject(user)//can also pass directly object instad of object name 
 handleObject({
     username: "sam",
     price: 399
